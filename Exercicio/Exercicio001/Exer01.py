@@ -1,0 +1,1 @@
+print('Primeiro commit para git hub \n Iniciando estudos em Python')
