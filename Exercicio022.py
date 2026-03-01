@@ -1,2 +1,2 @@
 nome = str(input('Digite o seu nome completo: ')).strip()
-print('O seu nome é : {} \n O seu nome com letra maiuculas : {} \n O seu nome com letras minuculas {} \n Quantas letras tem o seu nome : {}'.format(nome,nome.upper(),nome.lower(),len(nome)-nome.count(' ')))
+print('O seu nome é : {}\nO seu nome com letra maiuculas : {}\nO seu nome com letras minuculas {}\nQuantas letras tem o seu nome : {}\nSeu primeiro nome tem {}'.format(nome,nome.upper(),nome.lower(),len(nome)-nome.count(' '),nome.find(' ')))
