@@ -9,3 +9,10 @@ print('\033[1;31;43mOlá a todos')
 print('--'*30)
 print('\033[4;30;45mOlá de novo!\033[m')
 print('\033[32mahhhhhhh\033m')
+cores = {'limpa': '\033[m',
+         'azul': '\033[34m',
+         'amarelo': '\033[33m',
+         'preto e branco': '\033[7;30m'}
+
+nome = 'Joana'
+print('Ola! \nMuito prazer em te conhecer {}{}{}!!'.format(cores['amarelo'],nome,cores['limpa']))
