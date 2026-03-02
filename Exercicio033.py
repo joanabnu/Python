@@ -6,4 +6,12 @@ if b<a and b<c:
     menor = b
 if c<a and c<b:
     menor = c
-print('O menor valor digitador é : {}'.format(menor))
+
+# vericando o maior valor
+maior = a
+if b>a and b>c:
+    maior = b
+if c>a  and c > b:
+    maior = c
+
+print('O menor valor digitador é : {} \nO maior valor é : {} '.format(menor, maior))
