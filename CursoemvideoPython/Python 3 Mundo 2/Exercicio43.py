@@ -12,4 +12,4 @@ elif imc <=30:
 elif imc <= 40:
     print('Status : Obesidade {:.2f}'.format(imc))
 else:
-    print('Status : Acima {:.2f}. Obesidade mórbida'.format(imc))
+    print('Status : Obesidade mórbida {:.2f}'.format(imc))
