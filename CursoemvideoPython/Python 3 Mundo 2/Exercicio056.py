@@ -15,7 +15,7 @@ for c in range(1,4):
     if sexo in 'M' and idade > maioridadehomen:
         maioridadehomen = idade
         nomeVelho = nome
-    if sexo == 'F':
+    if sexo == 'F' and idade > 20:
         totalF += 1
 
 print('Media de idade é {} \nTotal de mulheres : {}'.format(mediaIdade,totalF))
