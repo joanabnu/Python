@@ -5,7 +5,7 @@ menor = 0
 maior = 0
 ano = 0
 for c in range(1,8):
-  ano = int(input('Informe o ano de nascimento : '))
+  ano = int(input(' {}° Informe o ano de nascimento : '.format(c)))
   print('Pessoa {} \nAno de nascimento : {}'.format(c,ano))
   idade = ano - atual
   if idade < 18:
