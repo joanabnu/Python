@@ -9,14 +9,14 @@ while opcao != 5:
     opcao = int(input('Qual é sua opção : '))
     if opcao == 1:
          soma = n1 + n2
-         print('A soma {} entre {} e {} '.format(soma,n1,n2))
+         print('\033[35mA soma {} entre {} e {} '.format(soma,n1,n2))
     elif opcao == 2:
          mult = n1 * n2
-         print('O valor da multiplicação : {}'.format(mult))
+         print('\033[32mO valor da multiplicação : {}'.format(mult))
     elif opcao == 3:
          if n1  > n2:
             maior = n1
-            print('O maior valor é {}'.format(n1))
+            print('\033[34mO maior valor é {}'.format(n1))
          else:
             maior = n2
             print('O maior valor é {}'.format(n2))
