@@ -1,5 +1,4 @@
-n  = tabu= 0
-
+n = cont = tabu= 0
 
 while True:
     print('=='*15)
