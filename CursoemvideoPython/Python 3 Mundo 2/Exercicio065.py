@@ -1,18 +1,24 @@
-cont = 1
+cont = 0
 media = 0
 maior = 0
 menor = 0
-num = int(input('Digite um numero : '))
-prosseguir = str(input('Gostaria de proseguir S/N')).upper()
+soma =0
+prosseguir ='S'
 while prosseguir == 'S':
     num = int(input('Digite um numero : '))
-    prosseguir = str(input('Gostaria de proseguir S/N')).upper().strip()[0]
     cont +=1
-    media = (num + num) / cont
-    if num > maior:
-        maior = num
-    elif num < menor:
-        menor = num
+    soma += num
+ 
+    if cont == 1:
+        maior = menor = num
+    else:
+        if num > maior:
+           maior = num
+        if num < menor:
+           menor = num
+    
+    prosseguir = str(input('Gostaria de proseguir S/N : ')).upper().strip()[0]
+media = soma / cont
 print('Maior valor : {} \nMenor valor : {} \nMedia : {} \nQuantidade {}'.format(maior,menor,media,cont))
     
 
