@@ -20,3 +20,6 @@ b = (5,8,1,2)
 c = b + a
 print(c.count(5))
 print(c.index(5,1))
+pessoa = ('Gustavo',39,'M',99.88)
+del(pessoa) # apagar
+print(pessoa)
