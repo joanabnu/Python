@@ -1,7 +1,7 @@
 menor =  maior = 0
 valores = list()
 for cont in range(0,5):
-    valores.append(int(input(f'Digite um valor {cont+1}° : ')))
+    valores.append(int(input(f'Digite um valor {cont}° : ')))
 
 for c, v in enumerate(valores):
 
@@ -11,11 +11,18 @@ for c, v in enumerate(valores):
     else:
         if valores[c] > maior:
            maior = valores[c]
-           print(f'O menor valor : {v} esta na posicao {c}')
+          
         if valores[c] < menor:
             menor = valores[c]
 
-print(f'Valores digitados foram {valores}') 
-print(f'O maior valor digitado : {maior}')  
-print(f'O maior valor digitado : {menor}')    
+print(f'Valores digitados foram {valores} ')
+for i, v in enumerate(valores):
+    if v == maior: 
+       print(f'O maior valor digitado : {maior} nas posicao {i}...') 
+
+
+for i, v in enumerate(valores):
+    if v == menor:
+       print(f'O menor valor digitado : {menor} na posicao {i}...')    
+
           
