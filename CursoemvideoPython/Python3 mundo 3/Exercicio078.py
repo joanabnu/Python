@@ -16,6 +16,7 @@ for c, v in enumerate(valores):
             menor = valores[c]
 
 print(f'Valores digitados foram {valores} ')
+print('--'*30)
 for i, v in enumerate(valores):
     if v == maior: 
        print(f'O maior valor digitado : {maior} nas posicao {i}...') 
