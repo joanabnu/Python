@@ -1,7 +1,15 @@
 num = list()
 while True:
-    num.append(int(input('Digite um valor : ')))
-    contin= str(input('Gostaria de continua : ')).upper().strip()
+    n = int(input('Digite um valor : '))
+    
+    if n not in num:
+        num.append(n)
+        print('Valor adicionado!! ')
+    else: 
+        print('Valor duplicado ')
+    contin = str(input('SIM/Não\nGostaria de continua : ')).upper().strip()
     if contin == 'N':
         break
-print(f'O valores : {num} \nNumeros ordem crescente {num.sort()}')
+print(f'O valores : {num} ')
+num.sort()
+print(f'Ordem crescente {num}')
