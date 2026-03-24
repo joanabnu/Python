@@ -17,7 +17,7 @@ while True:
         break
 print(pessoa)
 print(f'Quantidade : {QuantPessoa}')
-
+print('--'*20)
 for p in pessoa:
     if p[1] >= 100:
         pessoaPesada.append(pessoa)
@@ -25,7 +25,9 @@ for p in pessoa:
         quantPessoaPessada += 1
     else:
         pessoaLeve.append(pessoa)
+       
         print(f'A pessoa mais leve é : {p[0]} \nQuantidade de pessoa acima do peso {p[1]} ')
         quantPessoaleve += 1
+print('==' * 20)
 print(f'Quantidade de pessoa pessada : {quantPessoaPessada}')
 print(f'Quantidade de pessoa leve : {quantPessoaleve}')
