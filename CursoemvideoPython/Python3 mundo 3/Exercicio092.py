@@ -16,9 +16,8 @@ if pessoa['Carteira'] == 0:
 else: 
    pessoa['Ano'] = int(input('Ano de contratação : '))
    pessoa['Salario'] =  float(input('Salario : '))
-
    pessoa['Aposentadoria'] = (pessoa['idade'] + pessoa['Ano'] + 35 - datetime.now().year)
-
+   print('=='*25)
    for k, v in pessoa.items():
 
       print(f'{k} tem {v}')
