@@ -1,5 +1,6 @@
-# def lin():
+#  def lin():
 #     print('='*30)
+
 
 
 def mensagem(msg):
@@ -18,7 +19,7 @@ def  soma(a,b):
 soma(a=4,b=5)
 soma(b=8,a=9)
 soma(a=2,b=1)
-print('='*30)
+
 def contador(* num):
     a = len(num)
     print(f' são ao todo \n {a}° : {num}',end=' ')
