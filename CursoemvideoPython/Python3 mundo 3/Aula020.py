@@ -11,10 +11,11 @@ mensagem(' => Aprendendo Python <= ')
 
 def  soma(a,b):
    s = a + b
+   print(f'Os valores foram : A = {a} e B = {b}')
    print(f'A soma :  {s}')
 
 
-soma(4,5)
-soma(8,9)
-soma(2,1)
+soma(a=4,b=5)
+soma(b=8,a=9)
+soma(a=2,b=1)
 
