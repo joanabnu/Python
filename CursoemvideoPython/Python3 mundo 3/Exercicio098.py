@@ -5,14 +5,14 @@ def contador(inicio, fim, passo):
         cont = inicio
         while cont <= fim:
             print(f'{cont} ', end=' ', flush=True)
-            sleep(0.2)
+            sleep(0.3)
             cont +=passo
         print('Fim')
     else:
         cont = inicio
         while cont >= fim:
             print(f'{cont} ',end=' ', flush=True)
-            sleep(0.2)
+            sleep(0.3)
             cont -=passo
         print('Fim')
 
@@ -21,3 +21,8 @@ def contador(inicio, fim, passo):
 
 contador(1,10,1)
 contador(10,0,2)
+print('Agora é sua vez de personalizado a contagem! ')
+init = int(input('Inicia : '))
+final = int(input('Fim : '))
+pas = int(input('Passo : '))
+contador(init,final,pas)
